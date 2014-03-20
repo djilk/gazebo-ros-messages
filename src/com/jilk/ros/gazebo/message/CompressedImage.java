@@ -8,6 +8,7 @@ package com.jilk.ros.gazebo.message;
 import com.jilk.ros.message.Message;
 import com.jilk.ros.message.MessageType;
 import com.jilk.ros.message.Header;
+import com.jilk.ros.rosbridge.indication.Base64Encoded;
 
 /**
  *
@@ -18,5 +19,5 @@ import com.jilk.ros.message.Header;
 public class CompressedImage extends Message {
     public Header header;
     public String format;
-    public String data;
+    @Base64Encoded public byte[] data;
 }
