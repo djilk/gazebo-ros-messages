@@ -1,35 +1,27 @@
-/*
-string[] name
-geometry_msgs/Pose[] pose
-  geometry_msgs/Point position
-    float64 x
-    float64 y
-    float64 z
-  geometry_msgs/Quaternion orientation
-    float64 x
-    float64 y
-    float64 z
-    float64 w
-geometry_msgs/Twist[] twist
-  geometry_msgs/Vector3 linear
-    float64 x
-    float64 y
-    float64 z
-  geometry_msgs/Vector3 angular
-    float64 x
-    float64 y
-    float64 z
+/**
+ * Copyright (c) 2014 Jilk Systems, Inc.
+ * 
+ * This file is part of Gazebo-ROSBridge Messages.
+ *
+ * Gazebo-ROSBridge Messages is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * Gazebo-ROSBridge Messages is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with Gazebo-ROSBridge Messages.  If not, see http://www.gnu.org/licenses/.
+ * 
  */
-
 package com.jilk.ros.gazebo.message;
 
 import com.jilk.ros.message.Message;
 import com.jilk.ros.message.MessageType;
 
-/**
- *
- * @author David J. Jilk
- */
 @MessageType(string = "geometry_msgs/Vector3")
 public class GeometryVector3 extends Message {
     public double x;
